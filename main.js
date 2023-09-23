@@ -53,7 +53,7 @@ function atualizaTabela(){ // passa os valores do adicionaLinha para o html via 
 function atualizaMediaFinal(){ //passa os valores da média para o html via innerHTML
     const mediaFinal = calculaMediaFinal ();
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal; //escreva no campo com o id mencionado o valor obtido da string
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2); //escreva no campo com o id mencionado o valor obtido da string
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado;
 }
 
